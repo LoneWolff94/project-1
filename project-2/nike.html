@@ -1,0 +1,177 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+    <head><title>NIKE</title>
+        <link rel="icon" href="footwear.png" type=icon>
+        <style>
+            #root{
+                height: 98.3vh;
+                width: 100%;
+                background-color: aqua;
+                overflow: hidden;
+                position: relative;
+                z-index: -1;
+            }
+            #circle{
+                background: #d1d0ce;
+                border-radius:15%;
+                width:83%;
+                height: 123%;
+                position: absolute;
+               top: -20%;
+                left: -33%;
+                transform: rotate(37deg);
+                z-index: -1;
+            }
+            .navbar{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 90%;
+                height: 10%;
+                align-items: center;
+                margin: auto;
+            }
+            #leftprt img{
+                width: 55px;
+                height: 55px;
+            }
+            #leftprt{
+                display: flex;
+                align-items: center;
+                color:deeppink;
+                font-size: 20px;
+                font-family: sans-serif;
+                
+            }
+            .navbar ul{
+                display: flex;
+                flex: 1;
+                list-style-type: none;
+                font-weight: 700;
+                font-family:sans-serif;
+                font-size: 15px;
+            }
+            .links{
+                margin: 15px;
+            }
+            #shoe{
+                width:46%;
+                height: 50%;
+                position: absolute;
+                top: 20%;
+                right: 10%;
+            }
+            #main{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: rotate(-37deg);
+            }
+            .cntnt{
+                font-size: 35px;
+                font-family:sans-serif;
+                font-weight: bold;
+                color:darkblue;
+            }
+            #order{
+                background-color:cornsilk;
+                text-decoration: none;
+                color:darkblue;
+                font-size: 23px;
+                border-radius: 5px;
+                top: 0.3rem;
+                position: relative;
+            }
+            .contact{
+                margin-top: 4px;
+            }
+            .btns{
+                margin-top: 5px;
+            }
+            .btn{
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            .soc{
+                width: 35px;
+            }
+            .footer{
+              position: relative;
+                top: 57%;
+              display: block;
+            }
+            .design{
+                position: fixed;
+                bottom: -15%;
+                right: 0;
+                width: 100%;
+            }
+            .address{
+                z-index: 1;
+                position: absolute;
+                bottom: -18rem;
+                right: 5%;
+            }
+            .address p{
+                font-size: 1.3rem;
+            }
+            .address p span{
+                font-weight: bold;
+            }
+            @media screen and (max-width: 70rem){
+                .design{
+                    bottom: -5%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+       <div id="root">
+           <div class="navbar">
+               <div id="leftprt"><img src="footwear.png"><h2>NIKE</h2></div>
+               <nav>
+                   <ul>
+                       <li class="links">New trend</li>
+                        <li class="links">Features</li>
+                        <li class="links">Similar</li>
+                        <li class="links">Cart</li>
+                   </ul>
+               </nav>
+           </div>
+           
+    <div id="circle">
+       <div id="main">
+             <div class="cntnt mod">model no :<span> 56473</span></div>
+             <div class="cntnt name">Nike's Blue Hustle</div>
+                 
+          <div class="btns">
+            
+           <div class="contact">
+               <a href="mailto:nandakishoreramavath574@gmail.com" class="btn one"><img src="iconmonstr-gmail-3-240.png" class="soc"></a>
+               <a href="#" class="btn two"><img src="iconmonstr-twitter-3-240.png" class="soc"></a>
+            <a href="#" class="btn three"><img src="iconmonstr-instagram-13-240.png" class="soc"></a>
+           </div>
+              <a href="#" id="order">order now</a> 
+          </div>
+        </div>     
+    </div>
+           
+           <div id="shoe">
+               <img src="27428-5-nike-shoes-transparent-background.png" >
+           </div>
+     <div class="footer">
+         <div class="address">
+             <p>Created by:<br><span>Nanda Kishore</span></p>
+         </div>
+        <div class="design">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0090b0" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,170.7C672,181,768,171,864,138.7C960,107,1056,53,1152,42.7C1248,32,1344,64,1392,80L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+         </div>
+         
+               
+       
+              
+           </div>
+        </div>
+    </body>
+</html>

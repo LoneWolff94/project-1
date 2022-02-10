@@ -1,0 +1,169 @@
+<html>
+    <head>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+        
+         <title >chill center</title>
+        <link rel="icon" href="titlelogo.jpg" type="image/icon type">
+        <style>
+            #main{
+                
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                position: relative;
+                background: linear-gradient(to left,#267981,#451245);
+            }
+            nav{
+                width: 85%;
+                align-items: center;
+                margin: 20px auto;
+                display: flex;
+                justify-content: space-between;
+                position: sticky;
+                top:10px;
+                z-index: 1;
+            }
+            nav img{
+                width: 34px;
+                height: 34px;
+                
+            }
+            #head{
+                align-items: center;
+                display: flex;
+                font-size: 20px;
+                font-family: 'Island Moments', cursive;
+                font-family: 'The Nautigal', cursive;
+                color:cornflowerblue;
+                transform: scale(2)
+            }
+            .link{
+                margin: 4px;
+            }
+            #info{
+                width: 1000px;
+                height: 1000px;
+                position: absolute;
+                top: 50%;
+                left: -2%;
+                transform: translateY(-50%);
+            }
+            #circle{
+                width: 1000px;
+                height: 1000px;
+                position: absolute;
+                top: 0;
+                border-radius: 50%;
+                transition: 1s;
+                transform: rotate(0deg);
+            }
+            .song{
+                position: absolute;
+                  color: #fff;
+                font-size: 23px;
+                text-decoration: none;
+            }
+            .one{
+                top: 520px;
+                left: 780px;
+            }
+            .two{
+                top:470px;
+                left: 140px;
+                transform: rotate(180deg);
+            }
+            #poster{
+                position: absolute;
+                top: 45%;
+                left: 35%;
+                z-index: 1;
+                transform: translateY(-50%;);
+            }
+            #controls{
+               
+                position: absolute;
+                right:15%;
+                top: 45%;
+                text-align: center;
+            }
+            #upBtn{
+                width:30px;
+                cursor: pointer;
+               
+            }
+            #controls h3{
+                margin: 10px 0px;
+                color: #fff;
+            }
+            #downBtn{
+                width:30px;
+                cursor: pointer;
+                transform: rotate(180deg)
+            }
+            .overlay{
+                width: 0;
+                height: 0;
+                border-top: 500px solid #fff;
+                border-bottom: 500px solid #fff;
+                border-left: 500px solid #fff;
+                border-right: 500px solid  transparent;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .link{
+                text-decoration: none;
+                color: azure
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <nav>
+               <span id="head"><img src="titlelogo.jpg"> <h2>Chill-Center</h2></span>
+                <div class="links">
+                 <a href="#one" class="link" >Home</a>
+                 <a href="#two" class="link">Music</a>
+                 <a href="#three" class="link">Vedio</a>    
+                </div>
+            </nav>
+            
+           <div id="info">
+               <div class="overlay"></div>
+               <img src="atrangi%20re.jfif" alt="atrangi re" id="poster">
+             <div id="circle">
+                <div><a href="Rait%20Zara%20Si%20Atrangi%20Re%20128%20Kbps.mp3"  class="song one">Rait zara si</a></div>
+                <div ><a href="Little%20Little%20Atrangi%20Re%20128%20Kbps.mp3" class="song two">little little</a></div>
+             </div>
+            </div>
+            <div id="controls">
+                <img src="up.png" id="upBtn">
+                <h3>songs</h3>
+                 <img src="up.png" id="downBtn">
+            </div>
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upbtn = document.getElementById("upBtn");
+            var downbtn = document.getElementById("downBtn");
+            
+            var rotatevalue = circle.style.transform;
+            var rotatesum;
+            upbtn.onclick = function()
+            {
+                rotatesum = rotatevalue + "rotate(-180deg)";
+                circle.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            }
+             downbtn.onclick = function()
+            {
+                rotatesum = rotatevalue + "rotate(180deg)";
+                circle.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            }
+        </script>
+    </body>
+</html>

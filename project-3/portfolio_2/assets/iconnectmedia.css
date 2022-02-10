@@ -1,0 +1,76 @@
+@media(max-width:60rem) {
+    header {
+        height: auto;
+    }
+    header ul li {
+        margin: 0.4rem 0;
+    }
+    header a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.5rem;
+    }
+    .partOne {
+        background-size: cover;
+        height: auto;
+    }
+    #oneCntnt h1 {
+        font-size: 2rem;
+    }
+    .plainText {
+        margin: -5rem 8rem 5rem 7rem;
+        width: 70%;
+    }
+    .scroll {
+        height: 35rem;
+    }
+    #grids div {
+        width: 25rem;
+        font-size: 1.5rem;
+    }
+    #grids p {
+        font-size: 1rem;
+    }
+    #textTwo {
+        margin: 5rem 8rem;
+    }
+    #block {
+        margin: 2rem 8rem;
+    }
+    #qnaPart {
+        margin: 3rem 8rem;
+    }
+    .scrollCntnt {
+        width: 25rem;
+    }
+    #lstText {
+        margin-top: 5rem;
+    }
+    .plainText strong {
+        font-size: 1.3rem;
+    }
+    .plainText p {
+        font-size: 1.1rem;
+    }
+    .form {
+        height: 22rem;
+    }
+    .form h2 {
+        margin-bottom: -1rem;
+    }
+    .form form {
+        margin-left: 0;
+    }
+    .form button {
+        margin-top: -1.5rem;
+    }
+    #footer {
+        margin-top: 2rem;
+    }
+    .expandable {
+        max-height: 20rem;
+        min-height: 11rem;
+    }
+    #lstText ol li strong::before {
+        left: -7.2%;
+    }
+}
